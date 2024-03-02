@@ -1,0 +1,82 @@
+/* Styles for the results container */
+.results {
+    min-height: 40vh;
+    width: 90%;
+    max-width: 1200px; /* Adjusted maximum width for better responsiveness */
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Added overflow: hidden to prevent horizontal scrolling */
+    background-color: #f9f9f9; /* Light gray */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+
+}
+
+/* Styles for the title of the results */
+.title_results {
+    color: #1f1f1f; /* Dark gray */
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center; /* Centered the title */
+    margin-bottom: 20px;
+    
+}
+
+/* Styles for the container of all results */
+.section_all_results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; /* Changed alignment to flex-start */
+    box-sizing: border-box;
+}
+
+/* Styles for individual result sections */
+.section_individual_result {
+    width: 400px;
+    border: 1px solid #1f1f1f; /* Dark gray */
+    padding: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Styles for buttons container */
+.div_buttons_results {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+/* Styles for modify button */
+.modify_results {
+    text-decoration: none;
+    color: #1f1f1f; /* Dark gray */
+    margin-right: 5px;
+}
+
+/* Styles for delete button */
+.delete_results {
+    cursor: pointer;
+    background-color: #074920; /* Red */
+    color: #fff; /* White text */
+    padding: 5px 10px;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover styles for delete button */
+.delete_results:hover {
+    background-color: #074920; /* Darker red on hover */
+}
+.modify_results{
+    cursor: pointer;
+    background-color: #074920; /* Red */
+    color: #fff; /* White text */
+    padding: 5px 10px;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+}

@@ -1,0 +1,23 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting overflow-x to hidden to prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+    background-color: rgb(112, 137, 123);
+}
+
+/* Styles for the main content area */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 8vh); /* Adjusted to leave space for the footer */
+    padding: 20px; /* Added some padding for better spacing */
+}
