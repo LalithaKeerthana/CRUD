@@ -8,16 +8,15 @@
 /* Setting overflow-x to hidden to prevent horizontal scrolling */
 body {
     overflow-x: hidden;
-    background-color: rgb(112, 137, 123);
-}
-
+  
+    background: linear-gradient(to bottom, #1a237e, #0d47a1);}
 /* Styles for the main content area */
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     min-height: calc(100vh - 8vh); /* Adjusted to leave space for the footer */
     padding: 20px; /* Added some padding for better spacing */
+   /* Semi-transparent white background */
 }

@@ -17,7 +17,7 @@ function RouteData() {
       >
         <FormData />
         <button
-          style={{ width: "20%", margin: "0 auto", height:"50%"}}
+          style={{ width: "5%", margin: "0 auto", height:"50px"}}
           onClick={() => navigate("/")}
         >
           Go Back

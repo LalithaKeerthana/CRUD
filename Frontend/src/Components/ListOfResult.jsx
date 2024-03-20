@@ -39,38 +39,41 @@ window.location.reload();
 
   return (
     <div className="results">
-      <h1 className="title_results">Added Products</h1>
-      <section className="section_all_results">
-        {result.map((item, index) => (
-          <section key={index} className="section_individual_result">
-            <article>
-              <p className="p_results">Product Name</p>
-              <p className="product_result">{item.ProductName}</p>
-              
-              <p className="p_results">Category ID</p>
-              <p className="product_result">{item.CategoryID}</p>
-              <p className="p_results">Unit</p>
-              <p className="product_result">{item.Unit}</p>
-              <p className="p_results">Price</p>
-              <p className="product_result">{item.Price}</p>
-            </article>
-            <div className="div_buttons_results">
-              <Link to={`/modify/${item.ProductID}`}>
-                <button className="modify_results">Edit</button>
-              </Link>
-              <button
-                name={item.ProductID}
-                onClick={handleDelete}
-                className="delete_results"
-              >
-                Delete
-              </button>
-            </div>
-          </section>
-        ))}
-      </section>
+      <table className="table_results">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Category ID</th>
+            <th>Unit</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {result.map((item, index) => (
+            <tr key={index}>
+              <td>{item.ProductName}</td>
+              <td>{item.CategoryID}</td>
+              <td>{item.Unit}</td>
+              <td>{item.Price}</td>
+              <td>
+                <Link to={`/modify/${item.ProductID}`}>
+                  <button className="modify_results">Edit</button>
+                </Link>
+                <button
+                  name={item.ProductID}
+                  onClick={handleDelete}
+                  className="delete_results"
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
-}
+          }  
 
 export default ListOfResult;

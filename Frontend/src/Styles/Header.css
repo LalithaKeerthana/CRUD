@@ -1,6 +1,6 @@
 /* Styles for the header */
 header {
-    background-color: #a9c5c2; /* Dark gray */
+   
     width: 25%;
     height: 50px;
     display: flex;
@@ -8,16 +8,18 @@ header {
     align-items: center;
     margin-left: 900px;
     margin-top: 50px;
-    border: 5px solid #090808;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background:  linear-gradient(to bottom, #1a237e, #0d47a1); ;
     
 }
 
 /* Styles for the heading */
 h1 {
-    color: #090808; /* White text */
+    color: #eee9e9; /* White text */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     text-align: center;
-    margin: 0;
+   
     padding: 0.7vh 0; /* Adjusted padding for better alignment */
 }
